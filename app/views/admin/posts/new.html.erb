@@ -1,0 +1,13 @@
+<h2>Add New Post</h2>
+
+<div class="form-box">
+  <%= form_for [:admin, @post] do |f| %>
+    <%= render :partial => 'form', :locals => {:f => f} %>
+    
+    <div class="actions">
+      <%= f.submit :save %>
+      or
+      <%= link_to 'cancel', admin_posts_path %>
+    </div>
+  <% end %>
+</div>

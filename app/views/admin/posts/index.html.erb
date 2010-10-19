@@ -1,0 +1,9 @@
+<h2>Listing Posts</h2>
+
+<div class="new-record">
+  <%= link_to 'Add new Post', new_admin_post_path %>
+</div>
+
+<ul class="list">
+  <%= render @posts %>
+</ul>
