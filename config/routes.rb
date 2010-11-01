@@ -1,11 +1,10 @@
 Blog::Application.routes.draw do
   namespace :admin do
-    resources :posts
+    resources :posts do
+      resources :links
+    end
   end
   
-  resources :posts do
-     resources :links
-  end
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

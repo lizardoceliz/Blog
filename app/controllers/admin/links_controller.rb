@@ -14,7 +14,7 @@ class Admin::LinksController < ApplicationController
   end
 
   def create
-    @link  = @post.links.build(params[:post])
+    @link  = @post.links.build(params[:link])
     if @link.save
       redirect_to admin_post_links_path(@post)
     else

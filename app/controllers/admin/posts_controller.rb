@@ -31,6 +31,7 @@ class Admin::PostsController < ApplicationController
   end
   
   def show
+    @links = @post.links
   end
   
   def destroy

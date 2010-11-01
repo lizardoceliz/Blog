@@ -5,3 +5,4 @@ class Post < ActiveRecord::Base
   validates :entry,  :presence  => true
   validates :author, :presence  => true
 end
+  
